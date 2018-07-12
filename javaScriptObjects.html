@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objects</title>
+</head>
+<body>
+	<h1>JavaScript Objects</h1>
+	<div>
+		<h3>Primitive data types as objects</h3>
+		<p>Objects have methods and other properties. You can access them using the object operator <strong>A period "."</strong>
+		</p>
+		<script type="text/javascript">
+		//<![CDATA[
+		var name = "Steven";
+		document.writeln(name.length);
+		document.writeln(name.strike());
+		//]]>
+		</script>
+	</div>
+	<div>
+		<h3>Boolean object</h3>
+		<ul>
+			<li>var boolFlag1 = new Boolean();</li>
+			<li>var boolFlag2 = new Boolean(0);</li>
+			<li>var boolFlag3 = new Boolean(1);</li>
+			<li>var boolFlag4 = new Boolean(false);</li>
+			<li>var boolFlag5 = new Boolean(true);</li>
+			<li>var boolFlag6 = new Boolean("");</li>
+			<li>var boolFlag7 = new Boolean("false");</li>
+		</ul>
+		<p><strong>All objects have "valueOf()" and "toString()"</strong></p>
+			<script type="text/javascript">
+			//<![CDATA[
+			var boolFlag6 = new Boolean("");
+			document.writeln(boolFlag6.valueOf());
+			document.writeln(boolFlag6.toString());
+			//]]>
+			</script>
+	</div>
+	<div>
+		<h3>Number object</h3>
+		<p><h4>Static properties used for testing overflow conditions</h4>
+		<ul>
+			<li>Number.MAX_VALUE</li>
+			<li>Number.MIN_VALUE</li>
+			<li>Number.NaN (Not a Number)</li>
+			<li>Number.NEGATIVE_INFINITY</li>
+			<li>Number.POSITIVE_INFINITY</li>
+		</ul>
+			<script type="text/javascript">
+			//<![CDATA[
+			document.writeln("MAX_VALUE " + Number.MAX_VALUE);
+			document.writeln("</br>");
+			document.writeln("MIN_VALUE "+Number.MIN_VALUE);
+			//]]>
+			</script>
+		</p>
+		<p><h4>Instance methods</h4>
+					<ul>
+			<li>toExponential()</li>
+			<li>toFixed()</li>
+			<li>toPrecision()</li>
+			<li>toLocaleString()</li>
+		</ul>
+			<script type="text/javascript">
+			//<![CDATA[
+			var nmbrToTest = 4555685.22555;
+			document.writeln(nmbrToTest.toExponential());
+			document.writeln("</br>");
+			document.writeln(nmbrToTest.toFixed());
+			document.writeln("</br>");
+			document.writeln(nmbrToTest.toPrecision());
+			document.writeln("</br>");
+			document.writeln(nmbrToTest.toLocaleString());
+			//]]>
+			</script>
+
+		</p>
+	</div>
+</body>
+</html>

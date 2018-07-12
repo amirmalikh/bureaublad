@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objects 2</title>
+</head>
+<body>
+	<h1>JavaScript Objects 2</h1>
+	<div>
+		<h2>The String object</h2>
+		<p>Has several instance properties and methods</p>
+		<ul>
+			<li>length // contains the length of the string</li>
+			<li>anchor() // creates an HTML anchor</li>
+			<li>charAt() // returns a character at a given position (0-based)</li>
+			<li>indexOf() // starting point of first occurrence of a substring</li>
+			<li>lastIndexOf() // starting point of last occurrence of a substring</li>
+			<li>link() // returns a HTML link</li>
+			<li>concat() // concatenates strings together</li>
+			<li>split() // splits strings in tokens based on a separator</li>
+			<li>slice() // returns a slice from the string</li>
+			<li>substring(), substr() // returns a substring</li>
+			<li>big(), blink(), bold(), italics(), small(), strike(), sub(), sup()</li>
+			<li>match(), replace(), search() // use regular expressions</li>
+			<li>toLowerCase(), toUpperCase() // convert case</li>
+		</ul>
+	</div>
+	<div><h3>Some remarks</h3>
+		<ul>
+			<li>Strings are immutable<ul>
+				<li>You cannot change a string once you created it</li>
+				<li>Minimize the amount of concatenation, as this impacts performance</li>
+			</ul>
+		</li>
+		<li>substring(), substr() and slice()<ul>
+			<li>substring() takes two indices and extracts the characters<ul>
+				<li>If the stop index is less than the start, the values are swapped</li>
+			</ul>
+		</li>
+		<li>substr() takes an index and a length of the substring</li>
+		<li>slice()<ul>
+			<li>If the stop index is less than the start, the empty string is returned</li>
+		</ul>
+	</li>
+</ul>
+</li>
+<li>Static method<ul>
+	<li>fromCharCode()</li>
+	<li>Takes Unicode values separated by commas and returns a string</li>
+</ul>
+</li>
+</ul>
+</div>
+<div>
+		<script type="text/javascript">
+		//<![CDATA[
+		var name = "Steven";
+		document.writeln(name.length);
+		document.writeln("</br>");
+		document.writeln(name.strike());
+		//]]>
+		</script>
+</body>
+</html>

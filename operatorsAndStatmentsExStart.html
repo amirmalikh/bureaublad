@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EX 1 operators</title>
+	<script type="text/javascript">
+		function conditional1(){
+			var answer;
+			var answer = prompt("Give a number");
+			var result;
+			if (answer > 0 ) {
+				result= "positive";
+			} else {
+				result = "negative";
+			}
+			//return "positive" if the answer is a number larger than 0, return "negative" if the answer is smaller than zero
+			document.write("The answer is "+result+" "+answer);
+		}
+
+		function conditional2(){
+			var answer;
+			var answer = prompt("Give a number between 0 - 5");
+			var result;
+			if (answer == 0) {
+				result = "zero"
+				}else if (answer == 1) {
+					result = "one"}
+				else if (answer == 2) {
+					result = "two"}
+				else if (answer == 3) {
+					result = "three"}
+				else if (answer == 4) {
+					result = "four"}
+				else if (answer == 5) {
+					result = "five"}
+					else {
+						result = "Wrong input"
+					}
+			
+			//return the english word for the number using if - else if - else
+			//note, use else as a default to point out that the given number was not valid
+			document.write("The answer is "+result);
+		}
+
+		function conditional3(){
+			var answer;
+			var answer = prompt("Give a number between 0 - 5");
+			var result;
+			switch (answer) {
+				case '0': result = "zero"
+				break;
+				case '1': result = "one"
+				break;
+				case '2': result = "two"
+				break;
+				case '3': result = "three"
+				break;
+				case '4': result = "four"
+				break;
+				case '5': result = "five"
+				break;
+			default : result = "wrong input";
+			}
+			//return the same as in conditional2 but use a switch
+			document.write("The answer is "+result);
+		}
+
+		function whileLoop(){
+			var strValue = "";//use this to print the numbers
+			var nValue = 1;
+			while (nValue <= 6) {
+				strValue+=nValue;
+				nValue++;
+			} 
+			//Make the alert print out 6 numbers "1 2 3 4 5 6" use while loop
+			 alert(strValue);
+		}
+
+		function doWhileLoop(){
+			//Make the alert print out 6 numbers "1 2 3 4 5 6" use do.. while
+			var strValue = "";
+			var nValue = 1;
+			do {
+				strValue+=nValue;
+				nValue++;
+			} while (nValue <= 6);
+			alert(strValue);
+		}
+
+		function forLoop1(){
+			//Make the alert print out 6 numbers "1 2 3 4 5 6" use for loop 
+			for (var i = 1; i <= 6; i++) { 
+				alert(i)
+			}			
+		}
+
+		function forLoop2(){
+			//Loop over the collection and print each item on the screen
+			var myText = {
+				one : "one",
+				two : "two",
+				three : "three",
+				four : "four"
+			};
+
+			for(var prop in myText){
+				document.writeln(prop + "</br>");
+			}
+		}
+	</script>
+</head>
+<body>
+	<div>
+		<h1>Conditional excercises</h1>
+	<button onclick="conditional1();">Excercise conditional 1</button>
+	<button onclick="conditional2();">Excercise conditional 2</button>
+	<button onclick="conditional3();">Excercise conditional 3</button>
+</div>
+<div>
+	<h1>Loop excercises</h1>
+	<button onclick="whileLoop();">Excercise while loop</button>
+	<button onclick="doWhileLoop();">Excercise do.. while loop</button>
+	<button onclick="forLoop1();">Excercise for loop 1</button>
+	<button onclick="forLoop2();">Exercies for loop 2</button>
+</body>
+</html>
